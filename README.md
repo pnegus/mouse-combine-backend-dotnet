@@ -1,4 +1,4 @@
-# mouse-combine-backend-python
+# mouse-combine-backend-dotnet
 This is the backend for my mouse-combinator web app, written in Python using the Flask framework.
 
 #TODO
