@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MouseCombinatorConsumer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e3b3293ecbdffb8e91bb445fa405ece4dad9795")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e81c550505b270162a7ae1046c1047d4225b75c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("MouseCombinatorConsumer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MouseCombinatorConsumer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

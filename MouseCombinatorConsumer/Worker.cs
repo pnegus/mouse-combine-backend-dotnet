@@ -9,6 +9,7 @@ public class Worker : BackgroundService
         _logger = logger;
     }
 
+    //This task polls the queue
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
