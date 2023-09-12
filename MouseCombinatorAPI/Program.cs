@@ -1,15 +1,28 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
-
+using System.Diagnostics;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Instrumentation.Runtime;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddOpenTelemetry()
+    .ConfigureResource(resource => resource
+            .AddService(serviceName: builder.Environment.ApplicationName))
+        .WithMetrics(metrics => metrics
+            .AddRuntimeInstrumentation()
+            .AddConsoleExporter((exporterOptions, metricReaderOptions) =>
+            {
+                metricReaderOptions.PeriodicExportingMetricReaderOptions.ExportIntervalMilliseconds = 1000;
+            }));
+
 var app = builder.Build();
 
 //combine endpoint: 
 var combine_endpoint_group = app.MapGroup("/combine");
 combine_endpoint_group.MapPost("/", (MouseCombineRequest request) => 
     {
-        //TODO: create async task to process combined shapes
+        //TODO: enqueue request, and return appropriate status code
         foreach (int img_id in request.mouse_ids_to_combine) {
             
         }
@@ -34,5 +47,13 @@ var health_endpoint = app.MapGet("/health", () =>
 // MouseCombineRequest testReq = new MouseCombineRequest();
 
 // Console.WriteLine(JsonSerializer.Serialize(testReq));
+
+//terminal middleware
+
+app.Run(context =>
+{
+    context.Response.StatusCode = 404;
+    return Task.CompletedTask;
+});
 
 app.Run();

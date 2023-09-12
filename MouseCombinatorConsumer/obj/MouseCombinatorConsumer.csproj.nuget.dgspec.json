@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pnegus\\Documents\\projects\\mouse-combine-backend-dotnet\\MouseCombinatorConsumer\\MouseCombinatorConsumer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pnegus\\Documents\\projects\\mouse-combine-backend-dotnet\\MouseCombinatorConsumer\\MouseCombinatorConsumer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pnegus\\Documents\\projects\\mouse-combine-backend-dotnet\\MouseCombinatorConsumer\\MouseCombinatorConsumer.csproj",
+        "projectName": "MouseCombinatorConsumer",
+        "projectPath": "C:\\Users\\pnegus\\Documents\\projects\\mouse-combine-backend-dotnet\\MouseCombinatorConsumer\\MouseCombinatorConsumer.csproj",
+        "packagesPath": "C:\\Users\\pnegus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pnegus\\Documents\\projects\\mouse-combine-backend-dotnet\\MouseCombinatorConsumer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pnegus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0-preview.6.23329.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.6.23330.14\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
